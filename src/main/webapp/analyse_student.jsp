@@ -7,12 +7,10 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" pageEncoding="utf-8" %>
 <%@include file="templates/header.jsp" %>
-
-
 <html>
 <head>
     <title>写作-Acawriter</title>
-    <script src="js/analyse.all.js"></script>
+    <script src="js/analyse.all_s.js"></script>
 </head>
 
 
@@ -26,12 +24,10 @@
                         Demo Acawriter
                     </div>
                     <div class="layui-card-body">
-                        <div>请保持文字简短（不超过500字）以获得最佳效果。点击<a
-                                style="color: #ffb800">Get Feedback</a>来获取所选类型的反馈.点击<a style="color: #009688">Score Commit</a>
-                          保存写作版本并为此次写作过程评分
+                        <div>请保持文字简短（不超过500字）以获得最佳效果。点击
+                            <a style="color: #009688">Score Commit</a>
+                          保存写作版本
                         </div>
-
-                        <div style="margin: 20px 0"><textarea id="txt" style="display: none"></textarea></div>
 
                         <div class="layui-form">
                             <div class="layui-form-item">
@@ -41,6 +37,7 @@
                                     <select id="genre" lay-filter="genre">
                                         <option value="0">请选择写作类型</option>
                                         <optgroup label="Analytical">
+                                            <!--第一个是 -->
                                             <option value="6">Civil Law Essay</option>
                                             <option value="5">Research Abstract/Intro</option>
                                             <option value="7">Analytical Accounting</option>
@@ -51,11 +48,10 @@
                                     </select>
                                 </div>
                             </div>
+                        <div style="margin: 20px 0"><textarea id="txt" style="display: none"></textarea></div>
+
                             <div class="layui-form-item">
                                 <div class="layui-input-block" style="margin-left: 0">
-                                    <button class="layui-btn layui-btn-warm" id="send" style="display:inline-block">Get
-                                        Feedback
-                                    </button>
                                     <button class="layui-btn" id="score" style="display:inline-block">Score Commit
                                     </button>
                                 </div>
@@ -65,162 +61,6 @@
                     </div>
                 </div>
 
-                <div class="layui-card">
-                    <div class="layui-card-header" id="to-analyticalReport">
-                        Analytical Report
-                    </div>
-                    <div class="layui-card-body">
-                        <div id="analyticalReport7" style="display: none">
-                            <span>The analytical report highlights salient rhetorical moves AcaWriter identified in your essay for reflection. For more specific feedback, go to the Feedback tab.</span>
-                            <h5 style="font-size: 1.25rem">Rhetorical Moves</h5>
-                            <ul>
-                                <li><span class="badge badge-pill badge-analytic-green">S</span> Summarises or signals
-                                    the
-                                    authors goals
-                                </li>
-                                <li><span class="badge badge-pill badge-analytic">P</span> Perspective or stance</li>
-                                <li><span class="badge badge-pill badge-analytic">N</span> Novel improvements in ideas
-                                </li>
-                                <li><span class="badge badge-pill badge-analytic">E</span>Emphasis of a significant or
-                                    an
-                                    important idea
-                                </li>
-                                <li><span class="badge badge-pill badge-analytic">C</span> Contrasting idea, tension or
-                                    critical
-                                    insight
-                                </li>
-                                <li><span class="badge badge-pill badge-analytic">B</span> Background information and
-                                    previous
-                                    work
-                                </li>
-                                <hr>
-                                <div id="analyticalR7"></div>
-                            </ul>
-
-                        </div>
-                        <div id="analyticalReport6" style="display:none">
-                            <span>The analytical report highlights salient rhetorical moves AcaWriter identified in your essay for reflection. For more specific feedback, go to the Feedback tab.</span>
-                            <h5 style="font-size: 1.25rem">Rhetorical Moves</h5>
-                            <ul>
-                                <li><span class="badge badge-pill badge-analytic-green">S</span> Summarises or signals
-                                    the
-                                    authors goals
-                                </li>
-                                <li><span class="badge badge-pill badge-analytic">P</span> Perspective or stance
-                                </li>
-                                <li><span class="badge badge-pill badge-analytic">E</span> Emphasis to highlight key
-                                    ideas
-                                </li>
-                                <li><span class="badge badge-pill badge-analytic">N</span> Novel improvements in ideas
-                                </li>
-                                <li><span class="badge badge-pill badge-analytic">C</span> Contrasting idea, tension or
-                                    critical
-                                    insight
-                                </li>
-                                <li><span class="badge badge-pill badge-analytic">B</span> Background information and
-                                    previous
-                                    work
-                                </li>
-                                <li><span class="badge badge-pill badge-analytic">S</span> Surprising or unexpected
-                                    finding
-                                </li>
-                                <li><span class="badge badge-pill badge-analytic">Q</span> Question or gap in previous
-                                    knowledge
-                                </li>
-                                <li><span class="badge badge-pill badge-analytic">T</span> Trend or tendency related to
-                                    ideas
-                                </li>
-                            </ul>
-                            <hr>
-                            <div id="analyticalR6"></div>
-                        </div>
-                        <div id="analyticalReport5" style="display: none">
-                            <h5 style="font-size: 1.15rem">Move 1: Establishing a research territory</h5>
-                            <ul>
-                                <li><span class="badge badge-pill badge-analytic">E</span>Emphasis of a significant or
-                                    an
-                                    important idea
-                                </li>
-                                <li><span class="badge badge-pill badge-analytic">B</span>Background information and
-                                    reviewing
-                                    previous work
-                                </li>
-                            </ul>
-                            <h5 style="font-size: 1.15rem">Move 2: Establishing a Niche</h5>
-                            <ul>
-                                <li><span class="badge badge-pill badge-analytic">C</span>Contrasting idea, tension,
-                                    disagreement or critical insight
-                                </li>
-                                <li><span class="badge badge-pill badge-analytic">Q</span>Question or gap in previous
-                                    knowledge
-                                </li>
-                            </ul>
-
-                            <h5 style="font-size: 1.15rem">Move 3: Occupying the Niche</h5>
-                            <ul>
-                                <li><span class="badge badge-pill badge-analytic">N</span>Novelty and value of your
-                                    research
-                                </li>
-                                <li><span class="badge badge-pill badge-analytic-green">S</span>Summary of the author’s
-                                    goal or
-                                    nature of the research, or structure of the paper
-                                </li>
-                            </ul>
-                            <hr>
-                            <div id="analyticalR5"></div>
-                        </div>
-                        <div id="analyticalReport8" style="display: none">
-                            <div class="tab-pane active">
-                                <div class="bg-light ref_chk"><!---->
-                                    <ul class="list-inline">
-                                        <li class="list-inline-item">
-                                            <span class="context"></span>&nbsp;<span>Initial thoughts and feelings about a significant experience.</span>
-                                        </li>
-                                        <li class="list-inline-item">
-                                            <span class="challenge"></span>&nbsp;<span>The challenge of new surprising or unfamiliar ideas, problems or learning experiences.</span>
-                                        </li>
-                                        <li class="list-inline-item">
-                                            <span class="link2me"></span>&nbsp;<span><span class="link2me">Deeper reflection, personally applied.</span></span>
-                                        </li>
-                                        <li class="list-inline-item">
-                                            <span class="change"></span>&nbsp;<span>How new knowledge can lead to a change</span>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="bg-light ref_chk"><!---->
-                                    <ul class="list-inline">
-                                        <li class="list-inline-item">
-                                            <span class="epistemic"></span>&nbsp;<span><u>Expressions indicating belief, learning, or knowledge.</u></span>
-                                        </li>
-                                        <li class="list-inline-item">
-                                            <span class="modal"></span>&nbsp;<span><span class="modall">Expressions indicating self critique</span></span>
-                                        </li>
-                                        <li class="list-inline-item">
-                                            <span class="affect"></span>&nbsp;<span><span class="affect">Words associated with strong feelings</span></span>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="bg-light ref_chk"><!---->
-                                    <ul class="list-inline">
-                                        <li class="list-inline-item">
-                                            <span class="metrics"></span>&nbsp;<span>Sentence too long, might disengage the reader. Try breaking it into smaller sentences</span>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <hr>
-                            <div id="analyticalR8"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="layui-card">
-                    <div class="layui-card-header" id="to-feedback">
-                        Feedback
-                    </div>
-                    <div class="layui-card-body">
-                        <span id="feedback"></span>
-                    </div>
-                </div>
                 <div id="tips" class="layui-card" style="display: none">
                     <div class="layui-card-header" id="to-tips">
                         Tips
@@ -386,21 +226,7 @@
         </div>
     </div>
     <div style="display: none" id="temporary-storage"></div>
-    <div style="position:fixed;height:300px;width:100px;z-index: 100; top: 40vh; right: 2vw;text-align: center">
-        <div class="layui-layer-title">导航</div>
-        <div class="layui-layer-content" style="background-color: white">
-            <ul style="padding: 10px 0">
-                <li><a id="tips-analyticalReport" href="#to-analyticalReport"><cite>查看分析</cite></a></li>
-                <li><a id="tips-feedback" href="#to-feedback"><cite>查看反馈</cite></a></li>
-                <li id="r-examples" style="display: none"><a id="tips-examples"
-                                                             href="#to-examples"><cite>查看示例</cite></a></li>
-                <li id="r-tips" style="display: none"><a id="tips-tips" href="#to-tips"><cite>查看提示</cite></a></li>
-                <li id="r-resources" style="display: none"><a id="tips-resources" href="#to-resources"><cite>查看资源</cite></a>
-                </li>
-            </ul>
-        </div>
     </div>
-</div>
 </body>
 </html>
 

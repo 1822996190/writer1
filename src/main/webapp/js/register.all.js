@@ -1,4 +1,4 @@
-layui.use('layer', function () {
+ layui.use('layer', function () {
     var layer = layui.layer;
     var ulegal, plegal;
 
@@ -6,9 +6,11 @@ layui.use('layer', function () {
     $('#username').focus(function () {
         $('#error-umsg').empty();
     });
+    //失去焦点事件
     $('#username').blur(function () {
         ulegal = true;
         var username = $('#username').val();
+        //正则表达式
         var uPattern = /^[a-zA-Z0-9_-]{4,16}$/;
 
         if (username == '') {

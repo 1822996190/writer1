@@ -5,7 +5,7 @@
   Time: 15:54
   To change this template use File | Settings | File Templates.
 --%>
-
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 
 <html>
@@ -26,8 +26,20 @@
         </a>
         <a id="logout" style="cursor: pointer;text-align: center;display: none">登出</a>
     </li>
-    <li class="layui-nav-item"><a href="home.jsp">首页</a></li>
-    <li class="layui-nav-item"><a href="analyse.jsp">写作</a></li>
+
+    <c:if test="${role=='admin'}">
+        <li class="layui-nav-item"><a href="home_admin.jsp">首页</a></li>
+        <li class="layui-nav-item"><a href="analyse_admin.jsp">写作</a></li>
+        <li class="layui-nav-item"><a href="chart_ad.jsp">管理</a></li>
+    </c:if>
+    <c:if test="${role=='teacher'}">
+        <li class="layui-nav-item"><a href="home_teacher.jsp">首页</a></li>
+        <li class="layui-nav-item"><a href="analyse_teacher.jsp">写作</a></li>
+    </c:if>
+    <c:if test="${role=='student'}">
+        <li class="layui-nav-item"><a href="home_student.jsp">首页</a></li>
+        <li class="layui-nav-item"><a href="analyse_student.jsp">写作</a></li>
+    </c:if>
     <li class="layui-nav-item"><a href="chart.jsp">报表</a></li>
     <li class="layui-nav-item"><a href="community.jsp">社区</a></li>
     <li class="layui-nav-item"><a href="about.jsp">关于</a> </li>

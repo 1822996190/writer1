@@ -32,7 +32,9 @@ public class ReflectiveController {
     public @ResponseBody
     int saveReflective(@RequestBody Reflective r) {
         String username = (String) SecurityUtils.getSubject().getPrincipal();
-        if (username == null) return 0;
+        if (username == null) {
+            return 0;
+        }
         SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");//设置日期格式
         r.setSdate(df.format(new Date()));
         return reflectiveService.add(username, r);

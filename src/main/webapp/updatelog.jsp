@@ -21,7 +21,7 @@
         <li class="layui-timeline-item">
             <i class="layui-icon layui-timeline-axis">&#xe63f;</i>
             <div class="layui-timeline-content layui-text">
-                <h3 class="layui-timeline-title">2019-1-28</h3>
+                <h3 class="layui-timeline-title">2019-1-19</h3>
                 <p>
                     AcaWriter1.0已经就位，在此版本基础上我们还做了如下更新：
                 <ul>
@@ -34,7 +34,7 @@
         <li class="layui-timeline-item">
             <i class="layui-icon layui-timeline-axis">&#xe63f;</i>
             <div class="layui-timeline-content layui-text">
-                <h3 class="layui-timeline-title">2019-1-29</h3>
+                <h3 class="layui-timeline-title">2019-1-22</h3>
                 <p>图表页面调整</p>
                 <ul>
                     <li>查询条件中响应状态改为请求方法</li>
@@ -45,7 +45,7 @@
         <li class="layui-timeline-item">
             <i class="layui-icon layui-timeline-axis">&#xe63f;</i>
             <div class="layui-timeline-content layui-text">
-                <h3 class="layui-timeline-title">2019-2-13</h3>
+                <h3 class="layui-timeline-title">2019-1-24</h3>
                 <p>
                     导航栏样式优化
                     <br>写作反馈页面样式优化
@@ -56,7 +56,7 @@
         <li class="layui-timeline-item">
             <i class="layui-icon layui-timeline-axis">&#xe63f;</i>
             <div class="layui-timeline-content layui-text">
-                <h3 class="layui-timeline-title">2019-2-14</h3>
+                <h3 class="layui-timeline-title">2019-1-28</h3>
                 <p>
                     首页添加轮播样式
                     <br>写作反馈页面调整：
@@ -72,7 +72,7 @@
         <li class="layui-timeline-item">
             <i class="layui-icon layui-timeline-axis">&#xe63f;</i>
             <div class="layui-timeline-content layui-text">
-                <h3 class="layui-timeline-title">2019-2-15</h3>
+                <h3 class="layui-timeline-title">2019-2-5</h3>
                 <p>
                     字体图标样式优化
                     <br>增加底部栏文字浮动样式
@@ -82,17 +82,7 @@
         <li class="layui-timeline-item">
             <i class="layui-icon layui-timeline-axis">&#xe63f;</i>
             <div class="layui-timeline-content layui-text">
-                <h3 class="layui-timeline-title">2019-2-16</h3>
-                <p>
-                    项目部署到服务器，可通过域名http://acawriter.iask.in访问
-                    <br>前端UI优化
-                </p>
-            </div>
-        </li>
-        <li class="layui-timeline-item">
-            <i class="layui-icon layui-timeline-axis">&#xe63f;</i>
-            <div class="layui-timeline-content layui-text">
-                <h3 class="layui-timeline-title">2019-2-18</h3>
+                <h3 class="layui-timeline-title">2019-2-8</h3>
                 <p>
                     增加登陆功能
                     <br>写作反馈页面增加写作内容实时保存功能
@@ -102,7 +92,7 @@
         <li class="layui-timeline-item">
             <i class="layui-icon layui-timeline-axis">&#xe63f;</i>
             <div class="layui-timeline-content layui-text">
-                <h3 class="layui-timeline-title">2019-2-19</h3>
+                <h3 class="layui-timeline-title">2019-2-9</h3>
                 <p>
                     增加注册功能
                     <br>增加首页显示网站访问量统计
@@ -113,7 +103,7 @@
         <li class="layui-timeline-item">
             <i class="layui-icon layui-timeline-axis">&#xe63f;</i>
             <div class="layui-timeline-content layui-text">
-                <h3 class="layui-timeline-title">2019-2-20</h3>
+                <h3 class="layui-timeline-title">2019-2-10</h3>
                 <p>
                     首页UI优化
                     <br>修复了注册页面背景图片无法自适应的BUG
@@ -123,7 +113,7 @@
         <li class="layui-timeline-item">
             <i class="layui-icon layui-timeline-axis">&#xe63f;</i>
             <div class="layui-timeline-content layui-text">
-                <h3 class="layui-timeline-title">2019-2-26</h3>
+                <h3 class="layui-timeline-title">2019-2-16</h3>
                 <p>首页调整:</p>
                 <ul>
                     <li>字体语言调整为汉字中文</li>
@@ -142,7 +132,7 @@
         <li class="layui-timeline-item">
             <i class="layui-icon layui-timeline-axis">&#xe63f;</i>
             <div class="layui-timeline-content layui-text">
-                <h3 class="layui-timeline-title">2019-2-27</h3>
+                <h3 class="layui-timeline-title">2019-2-17</h3>
                 <p>
                     网站字体优化
                     <br>访问量统计每个用户当天访问只记一次
@@ -151,24 +141,11 @@
                 </p>
             </div>
         </li>
+
         <li class="layui-timeline-item">
             <i class="layui-icon layui-timeline-axis">&#xe63f;</i>
             <div class="layui-timeline-content layui-text">
-                <h3 class="layui-timeline-title">2019-2-28</h3>
-                <p>
-                    AcaWriter2.0准备就绪：
-                <ul>
-                    <li>页面风格较1.0有较大变化</li>
-                    <li>修复某些BUG</li>
-                    <li>提示信息更加优化</li>
-                </ul>
-                </p>
-            </div>
-        </li>
-        <li class="layui-timeline-item">
-            <i class="layui-icon layui-timeline-axis">&#xe63f;</i>
-            <div class="layui-timeline-content layui-text">
-                <h3 class="layui-timeline-title">2019-3-6</h3>
+                <h3 class="layui-timeline-title">2019-2-19</h3>
                 <p>
                     增加社区功能：
                 <ul>
@@ -183,7 +160,7 @@
         <li class="layui-timeline-item">
             <i class="layui-icon layui-timeline-axis">&#xe63f;</i>
             <div class="layui-timeline-content layui-text">
-                <h3 class="layui-timeline-title">2019-3-7</h3>
+                <h3 class="layui-timeline-title">2019-2-22</h3>
                 <p>
                     图表页面：
                 <ul>
@@ -193,41 +170,10 @@
                 </ul>
                 </p>
             </div>
-        </li>
         <li class="layui-timeline-item">
             <i class="layui-icon layui-timeline-axis">&#xe63f;</i>
             <div class="layui-timeline-content layui-text">
-                <h3 class="layui-timeline-title">2019-3-16</h3>
-                <p>AcaWriter3.0版本开启</p>
-                <p>后端添加mybatis框架支持</p>
-                <p>
-                    社区页面：
-                <ul>
-                    <li>增加查询功能</li>
-                    <li>增加按类别快速查找</li>
-                </ul>
-                </p>
-            </div>
-        </li>
-        <li class="layui-timeline-item">
-            <i class="layui-icon layui-timeline-axis">&#xe63f;</i>
-            <div class="layui-timeline-content layui-text">
-                <h3 class="layui-timeline-title">2019-3-20</h3>
-                <p>后端添加SpringMVC框架支持</p>
-                <p>
-                    社区：
-                <ul>
-                    <li>增加消息数量提示</li>
-                    <li>增加消息已读处理</li>
-                    <li>解决动态添加的元素无法应用JS事件的BUG</li>
-                </ul>
-                </p>
-            </div>
-        </li>
-        <li class="layui-timeline-item">
-            <i class="layui-icon layui-timeline-axis">&#xe63f;</i>
-            <div class="layui-timeline-content layui-text">
-                <h3 class="layui-timeline-title">2019-3-21</h3>
+                <h3 class="layui-timeline-title">2019-2-24</h3>
                 <p>增加关于页面，展示AcaWriter接口的信息</p>
                 <p>关于页面增加联系我们功能，可以向作者提出建议或意见</p>
                 <p>
@@ -241,38 +187,20 @@
                 <p>功能模块基本完成，接下来是性能优化阶段</p>
             </div>
         </li>
+
         <li class="layui-timeline-item">
             <i class="layui-icon layui-timeline-axis">&#xe63f;</i>
             <div class="layui-timeline-content layui-text">
-                <h3 class="layui-timeline-title">2019-3-21</h3>
-                <p>AcaWriter4.0版本开启</p>
-                <p>Spring整合Mybatis</p>
-                <p>项目结构优化</p>
-            </div>
-        </li>
-        <li class="layui-timeline-item">
-            <i class="layui-icon layui-timeline-axis">&#xe63f;</i>
-            <div class="layui-timeline-content layui-text">
-                <h3 class="layui-timeline-title">2019-3-24</h3>
+                <h3 class="layui-timeline-title">2019-2-25</h3>
                 <p>使用shiro框架实现了无加密登录验证</p>
                 <p>修复了添加spring框架后log4j无法输出日志到控制台的BUG</p>
-                <p>nginx反向代理tomcat实现动静分离（未完成）</p>
+
             </div>
         </li>
         <li class="layui-timeline-item">
             <i class="layui-icon layui-timeline-axis">&#xe63f;</i>
             <div class="layui-timeline-content layui-text">
-                <h3 class="layui-timeline-title">2019-3-25</h3>
-                <p>nginx反向代理tomcat实现动静分离</p>
-                <p>开启mybatis二级缓存，提高查询效率</p>
-                <p>使用spider-font压缩中文字体包，解决前端加载过慢的问题</p>
-                <p>服务端代码使用javadoc注释风格</p>
-            </div>
-        </li>
-        <li class="layui-timeline-item">
-            <i class="layui-icon layui-timeline-axis">&#xe63f;</i>
-            <div class="layui-timeline-content layui-text">
-                <h3 class="layui-timeline-title">2019-3-27</h3>
+                <h3 class="layui-timeline-title">2019-2-27</h3>
                 <p>log4j升级为log4j2，结合slf4j实现日志功能</p>
                 <p>前端微调整</p>
             </div>
@@ -280,16 +208,23 @@
         <li class="layui-timeline-item">
             <i class="layui-icon layui-timeline-axis">&#xe63f;</i>
             <div class="layui-timeline-content layui-text">
-                <h3 class="layui-timeline-title">2019-3-29</h3>
+                <h3 class="layui-timeline-title">2019-2-29</h3>
                 <p>SpringMVC注解方式处理servlet请求</p>
                 <p>web服务改为RESTful风格</p>
+            </div>
+        </li>
+        <li class="layui-timeline-item">
+            <i class="layui-icon layui-timeline-axis">&#xe63f;</i>
+            <div class="layui-timeline-content layui-text">
+                <h3 class="layui-timeline-title">2019-3-1</h3>
+                <p>完成管理员模块</p>
             </div>
         </li>
         <%--最后一行--%>
         <li class="layui-timeline-item">
             <i class="layui-icon layui-anim layui-anim-rotate layui-anim-loop layui-timeline-axis">&#xe63e;</i>
             <div class="layui-timeline-content layui-text">
-                <div class="layui-timeline-title">程序员小哥哥加紧写代码中...</div>
+                <div class="layui-timeline-title">我还在加紧写代码中...</div>
             </div>
         </li>
     </ul>

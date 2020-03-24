@@ -32,7 +32,9 @@ public class PostsController {
     int
     savePosts(@RequestBody Posts p) {
         String author = (String) SecurityUtils.getSubject().getPrincipal();
-        if (author == null) return 0;
+        if (author == null) {
+            return 0;
+        }
         p.setAuthor(author);
         SimpleDateFormat df = new SimpleDateFormat("d MMM yyyy");//设置日期格式
         p.setSdate(df.format(new Date()));
@@ -74,8 +76,9 @@ public class PostsController {
     @RequestMapping(value = "/posts/fuzzy", method = RequestMethod.GET,produces = "text/html;charset=utf-8")
     public @ResponseBody
     String fuzzyQueryPosts(@RequestParam("category") String category, @RequestParam("author") String author, @RequestParam("key_words") String kw) throws IOException {
-        if (author.equals("My"))
+        if ("My".equals(author)) {
             author = (String) SecurityUtils.getSubject().getPrincipal();
+        }
         return postsService.fuzzyQuery(kw, category, author);
     }
 

@@ -32,7 +32,9 @@ public class CommentsController {
     int
     saveComments(@RequestBody Cmts c) {
         String commentator = c.getNiming() == 1 ? "匿名用户" : (String) SecurityUtils.getSubject().getPrincipal();
-        if (commentator == null) return 0;
+        if (commentator == null) {
+            return 0;
+        }
         SimpleDateFormat df = new SimpleDateFormat("d MMM yyyy");//设置日期格式
         String cdate = df.format(new Date());
         return commentsService.save(c.getSid(), c.getComment(), cdate, commentator);

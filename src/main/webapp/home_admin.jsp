@@ -29,12 +29,12 @@
                 <i class="zfj-home" style="color: #fff; color: rgba(255,255,255,.7);"></i>
             </div>
             <div class="layui-anim site-desc site-desc-anim">
-                <p class="web-font-desc" style="font-family:jiashu">智能写作分析系统</p>
+                <p class="web-font-desc" style="font-family:'Microsoft YaHei'">写作训练系统管理</p>
                 <cite>待，秋风萧瑟时，散作满天星辰，看那四季轮回，是我不灭的执念。</cite>
             </div>
             <div class="site-download">
-                <a href="analyse.jsp" class="layui-inline site-down">
-                    开始写作之旅
+                <a href="analyse_admin.jsp" class="layui-inline site-down">
+                    开始写作之旅(admin)
                 </a>
             </div>
             <div class="site-version">
@@ -49,19 +49,19 @@
             <li style="margin-top: 30px">
                 <fieldset class="layui-elem-field layui-field-title">
                     <legend>开门见山</legend>
-                    <p>智能写作分析系统，是一个提供写作智能分析的平台。大量的写作研究表明，很多学生很难用正式的学术语言表达自己的想法，并希望能够得到一些有利的反馈，智能写作分析系统可以帮助他们。</p>
+                    <p>写作训练系统，是一个提供写作训练的平台。大量的写作研究表明，很多学生很难用语言表达自己的想法，并希望能够得到一些有利的反馈，写作分析系统可以帮助他们。</p>
                 </fieldset>
             </li>
             <li style="margin-top: 30px">
                 <fieldset class="layui-elem-field layui-field-title">
                     <legend>曲尽其妙</legend>
-                    <p>AcaWriter通过寻找具有良好学术写作的特定标志来发挥作用，这些标志表明存在重要的联系，或者是思想的重要发展或对比。这有助于展示您作为反思专业人士的批判性思维，论证技巧或发展。</p>
+                    <p>AcaWriter通过寻找具有良好写作的特定标志来发挥作用，这些标志表明存在重要的联系，或者是思想的重要发展或对比。这有助于展示您作为反思性的批判思维，论证技巧或发展。</p>
                 </fieldset>
             </li>
             <li style="margin-top: 30px">
                 <fieldset class="layui-elem-field layui-field-title">
                     <legend>水到渠成</legend>
-                    <p>智能写作反馈，有分析性反馈和反思性反馈两种。在写作后首先应进行自我反思，自己分析批改，然后可将文章分享给他人评阅。最后结合他人意见和自动反馈结果进行总结，对自己的写作进行优化。</p>
+                    <p>写作反馈，有分析性反馈：在写作后可将文章分享给老师评阅，最后结合他人意见和自动反馈结果进行总结，对自己的写作进行优化。</p>
                 </fieldset>
             </li>
         </ul>

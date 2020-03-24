@@ -7,8 +7,14 @@
     <select id="queryByUAndP" parameterType="User" resultType="User">
         select id from user where username=#{username} and password=#{password}
     </select>
+    <select id="queryIs_valid" parameterType="string" resultType="string">
+        select is_valid from user where username=#{username}
+    </select>
+    <select id="queryRole_permissions" parameterType="string" resultType="string">
+         select role_permissions from user where username=#{username}
+    </select>
     <insert id="add" parameterType="User">
-        insert into user (username,password) values (#{username},#{password})
+        insert into user (username,password,role_permissions,is_valid) values (#{username},#{password},#{role_permissions},#{is_valid})
     </insert>
     <update id="createTableR" parameterType="string">
         create table ${tableName}(
@@ -31,4 +37,7 @@
         comment text
         )DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci
     </update>
+    <select id="queryTitle" parameterType="java.util.List" resultType="User">
+        select id,username,role_permission,is_valid from user
+    </select>
 </mapper>

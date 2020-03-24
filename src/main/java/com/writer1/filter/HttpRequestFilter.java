@@ -1,5 +1,9 @@
 package com.writer1.filter;
 
+import org.apache.shiro.SecurityUtils;
+import org.apache.shiro.session.Session;
+import org.apache.shiro.subject.Subject;
+
 import javax.servlet.*;
 import javax.servlet.annotation.WebFilter;
 import javax.servlet.http.HttpServletRequest;
@@ -17,15 +21,15 @@ public class HttpRequestFilter implements Filter {
     public void init(FilterConfig filterConfig) {
     }
 
+    @Override
     public void doFilter(ServletRequest request, ServletResponse response, FilterChain filterChain) throws IOException, ServletException {
         HttpServletRequest httpServletRequest = (HttpServletRequest) request;
         HttpServletResponse httpServletResponse = (HttpServletResponse) response;
-
         request.setCharacterEncoding(CHARACTER_ENCODING);
         httpServletResponse.setCharacterEncoding(CHARACTER_ENCODING);
-
-        //过滤掉静态资源请求
         String spath = httpServletRequest.getServletPath();
+        String role= (String) httpServletRequest.getSession().getAttribute("role");
+        //过滤掉静态资源请求
         String[] urls = {"/pages/", "/css/", "/plugins/","favicon"};
         boolean flag = true;
         for (String str : urls) {
@@ -34,9 +38,27 @@ public class HttpRequestFilter implements Filter {
                 break;
             }
         }
-
         if (flag) {
-//            System.out.println("请求 "+spath);
+            if(spath.indexOf("login")!=-1){
+
+            }
+           if(spath.indexOf("admin")!=-1){
+                if(role!="admin"){
+                    return;
+                }
+                filterChain.doFilter(request, response);
+            }else if(spath.indexOf("teacher")!=-1){
+                if(role!="teacher"){
+                    return;
+                }
+                filterChain.doFilter(request, response);
+            }else if(spath.indexOf("student")!=-1){
+                if(role!="student"){
+                    return;
+                }
+                filterChain.doFilter(request, response);
+            }
+            System.out.println("请求 "+spath);
             //计算url请求响应时间
             long t1 = System.currentTimeMillis();
             filterChain.doFilter(request, response);//拦截request获取请求信息后放行

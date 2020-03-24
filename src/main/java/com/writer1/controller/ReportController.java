@@ -50,7 +50,9 @@ public class ReportController {
     public @ResponseBody
     int saveReport(@RequestBody Report r) {
         String username = (String) SecurityUtils.getSubject().getPrincipal();
-        if (username == null) return 0;
+        if (username == null) {
+            return 0;
+        }
         r.setUsername(username);
         return reportServiceImpl.save(r);
     }
